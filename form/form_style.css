@@ -1,0 +1,106 @@
+.main-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    padding: 50px 0px;
+    background: linear-gradient(270deg, #06212e, #0b0c10 50%);
+}
+
+@media only screen and (max-width:1150px){
+    .main-body{
+        height: auto;
+    }
+}
+
+.main-body h2{
+    font-size: 22pt;
+    text-align: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.input-group{
+    position: relative;
+    margin: 30px 5px;
+}
+
+.input-group_input{
+    font: inherit;
+    color: white;
+    width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid white;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+
+.input-group_input:is(:focus, :valid){
+    outline-color: aqua;
+    color: white;
+}
+
+.input-group_label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 19px 10px;
+    color: white;
+    transition: translate 500ms, scale 500ms;
+}
+
+.input-group_input:focus + .input-group_label, .input-group_input:valid + .input-group_label,
+.input-group_input-date:focus + .input-group_label, .input-group_input-date:valid + .input-group_label,
+.input-group_input-email:focus + .input-group_label, .input-group_input-email:valid + .input-group_label{
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0.8;
+    background-color: #0b0c10;
+}
+
+.input-group_input-date, .input-group_input-email{
+    font: inherit;
+    color: transparent;
+    color-scheme: dark;
+    width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid white;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+
+.input-group_input-date:is(:focus, :valid), .input-group_input-email:is(:focus, :valid){
+    outline-color: aqua;
+    color: white;
+}
+
+.input-button{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 115px;
+}
+
+.input-button input{
+    color-scheme: dark;
+    padding: 10px;
+    width: 150px;
+    border-radius: 6px;
+    background-color: transparent;
+    outline: none;
+    border: solid white 2px;
+}
+
+.input-button input:hover{
+    background-color: #083952;
+}

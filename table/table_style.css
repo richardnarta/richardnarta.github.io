@@ -1,0 +1,56 @@
+.main-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    color: white;
+    font-size: 14pt;
+    background: linear-gradient(270deg, #06212e, #0b0c10 50%);
+}
+
+.main-body h2{
+    margin-top: 20px;
+}
+
+tr, td{
+    border: solid white 1px;
+    padding: 5px 8px;
+}
+
+tr:nth-child(even) {background-color: #043046;}
+
+table{
+    border-spacing: 0;
+    width: auto;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#nama{
+    width: 12%;
+}
+
+#nim{
+    width: 10%;
+}
+
+#prodi{
+    width: 12%;
+}
+
+#email{
+    width: 15%;
+}
+
+#pw{
+    width: 10%;
+}
+
+#jk{
+    width: 11%;
+}
+
+#tl{
+    width: 12%;
+}
