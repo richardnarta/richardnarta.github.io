@@ -1,6 +1,5 @@
 *{
     margin: 0px;
-    /* border: solid white 1px; */
 }
 
 html{
@@ -10,6 +9,11 @@ html{
 body {
     margin: 0;
     height: 100%;
+}
+
+.navigation-list ul{
+    list-style: none;
+    display: flex;
 }
 
 .navigation-container{
@@ -86,6 +90,8 @@ body {
 
 .sidebar ul{
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar li{
