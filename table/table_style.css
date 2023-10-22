@@ -16,6 +16,7 @@
 tr, td{
     border: solid white 1px;
     padding: 5px 8px;
+    word-wrap: break-word;
 }
 
 tr:nth-child(even) {background-color: #043046;}
@@ -23,8 +24,9 @@ tr:nth-child(even) {background-color: #043046;}
 table{
     border-spacing: 0;
     width: auto;
-    margin: 20px 0px;
+    margin: 20px 10px;
     text-align: center;
+    table-layout: fixed;
 }
 
 #nama{

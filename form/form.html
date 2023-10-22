@@ -65,7 +65,7 @@
 
                 <div class="main-body">
                     <h2>Form Pendataan Mahasiswa</h2>
-                    <form class="form" method="get" id="mhs_form" action="/form/form.html">
+                    <form method="get" id="mhs_form" action="/form/form.html" name="form">
                         <div class="input-container">
                             <div>
                                 <div class="input-group">
@@ -91,7 +91,11 @@
                                     <label for="pass" class="input-group_label">Password</label>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" id="jk" class="input-group_input" required name="jk">
+                                    <select id="jk" class="input-group_input" required name="jk" style="width: 520px;" size="1">
+                                        <option selected value=""></option>
+                                        <option value="Pria">Pria</option>
+                                        <option value="Wanita">Wanita</option>
+                                    </select>
                                     <label for="jk" class="input-group_label">Jenis Kelamin</label>
                                 </div>
                                 <div class="input-group">
@@ -133,7 +137,7 @@
                     <div class="footer-content3">
                         <h3>Attatchment</h3>
                         <a href="https://classroom.google.com/">Google Classroom</a>
-                        <br><a href="https://github.com/">GitHub</a>
+                        <br><a href="https://github.com/richardnarta">GitHub</a>
                     </div>
 
                     <div class="footer-content4">
@@ -148,5 +152,6 @@
                 </div>
             </div>
         </section>
+        <script src="form.js"></script>
     </body>
 </html>

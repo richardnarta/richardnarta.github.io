@@ -1,13 +1,21 @@
-document.getElementById('mhs_form').addEventListener('submit',
-    function(event){
-        event.preventDefault();
+const form = document.forms.form;
 
-        const name = document.getElementById('nama').value;
-        localStorage.setItem('nama', name)
+function saveData(key, value){
+    sessionStorage.setItem(key, value)
+}
 
-        List = {
-            nama : name
-        }
+function handleSubmit(event){
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = [...formData.entries()];
 
-        console.log('success')
-    });
+    for(let i=0; i<data.length; i++){
+        saveData(data[i][0], data[i][1])
+    }
+
+    setTimeout(() => {
+        alert('data berhasil ditambahkan ke tabel!')
+    }, 1000);
+}
+
+form.addEventListener('submit', handleSubmit);

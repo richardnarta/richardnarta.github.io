@@ -2,13 +2,19 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 100%;
     color: white;
     padding: 50px 0px;
     background: linear-gradient(270deg, #06212e, #0b0c10 50%);
 }
 
 @media only screen and (max-width:1150px){
+    .main-body{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:480px){
     .main-body{
         height: auto;
     }
@@ -84,11 +90,14 @@
     color: white;
 }
 
+option{
+    background-color: black;
+}
+
 .input-button{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     margin-top: 20px;
-    margin-right: 115px;
 }
 
 .input-button input{
