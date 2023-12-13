@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UAS</title>
+        <link rel="stylesheet" href="uas/css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-detail">
+                <img src="uas/image/logo.png" alt="...">
+                <h1>Sistem Informasi Akademik Institut Teknologi Sumatera</h1>
+            </div>
+            
+            <div class="navigation">
+                <a href="">Daftar Mahasiswa</a>
+                <a href="">Logout</a>
+            </div>
+        </header>
+
+        <main>
+            <h1>Input Data Mahasiswa</h1>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="uas/image/logo.png" alt="...">
+                        <h3>Institut Teknologi Sumatera</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="uas/image/img_placeholder.jpg" alt="...">
+                        <div class="card-detail">
+                            <p>Nama</p>
+                            <p>NIM</p>
+                            <p>Prodi</p>
+                            <p>Fakultas</p>
+                        </div>
+
+                        <div class="card-data">
+                            <p id="nama">:</p>
+                            <p id="nim">:</p>
+                            <p id="prodi">:</p>
+                            <p id="fakultas">:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" method="post">
+                <div class="body-input-1">
+                    <div class="input-item">
+                        <label for="nama">Nama</label>
+                        <input type="text" required name="nama">
+                    </div>
+                    
+                    <div class="input-item">
+                        <label for="nim">NIM</label>
+                        <input type="number" required name="nim">
+                    </div>
+                    
+                    <div class="input-item">
+                        <label for="prodi">Prodi</label>
+                        <input type="text" required name="prodi">
+                    </div>
+    
+                    <div class="input-item">
+                        <label for="fakultas">Fakultas</label>
+                        <select required name="fakultas">
+                            <option selected value=""></option>
+                            <option value="fs">Sains</option>
+                            <option value="ftik">Teknologi Infrastruktur dan Kewilayahan</option>
+                            <option value="fti">Teknologi  Industri</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="body-input-2">
+                    <div class="input-item">
+                        <label for="nik">NIK</label>
+                        <input type="number" required name="nik">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="tanggal-lahir">Tanggal Lahir</label>
+                        <input type="date" required name="tanggal-lahir">
+                    </div>
+                    
+                    <div class="input-item">
+                        <label for="jenis-kelamin">Jenis Kelamin</label>
+                        <select required name="jenis-kelamin">
+                            <option selected value=""></option>
+                            <option value="Pria">Pria</option>
+                            <option value="Wanita">Wanita</option>
+                        </select>
+                    </div>
+    
+                    <div class="input-item">
+                        <label for="email">Email</label>
+                        <input type="email" required name="email">
+                    </div>
+                </div>
+
+                <div class="body-input-3">
+                    <input class="submit-btn" type="submit">
+                </div>
+            </form> 
+        </main>
+        
+        <!-- <footer>
+            Footer
+        </footer> -->
+    </body>
+</html>
